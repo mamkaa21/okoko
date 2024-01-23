@@ -18,6 +18,7 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -45,7 +46,13 @@
         <Label Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Content="Purchansed At" FontSize="15" />
         <TextBox Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="3" Margin="0 0 0 10" Background="SandyBrown"/>
         <Label Grid.Row="5" Grid.Column="0" Content="Category" FontSize="15"/>
-        <ComboBox Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="3" Margin=" 0 0 0 10"/>
+        <ComboBox Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="3" Margin=" 0 0 0 10">
+            <TextBlock Text=" Gender 1 "/>
+            <TextBlock Text=" Gender 2 "/>
+            <TextBlock Text=" Gender 3 "/>
+            <TextBlock Text=" Gender 4 "/>
+            <TextBlock Text=" Gender 1000000000000000000000 "/>
+        </ComboBox>
         <Label Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Content="Weight/Gram or Ouncts" FontSize="15"/>
         <TextBox Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Margin="0 0 50 10" Background="SandyBrown"/>
         <ComboBox Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="2" Margin="50 0 0 10"/>
@@ -58,17 +65,45 @@
         <TextBox Grid.Row="9" Grid.Column="2" Grid.ColumnSpan="3" Margin="0 0 0 10" Background="SandyBrown"/>
 
         <Border Grid.Row="11" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="2"
-               VerticalAlignment="Center" HorizontalAlignment="Left"
-                BorderBrush="White" BorderThickness="2" CornerRadius="15">
-        <Label 
-               Content="Add" FontSize="32"
+               VerticalAlignment="Center" HorizontalAlignment="Center"
+                BorderBrush="White" BorderThickness="2" >
+            <TextBlock Padding="3"
+               Text="Add" FontSize="32" 
                Foreground="White"/>
         </Border>
-        <Label Grid.Row="11" Grid.Column="3" Grid.ColumnSpan="2" Grid.RowSpan="2" Content="Clear" FontSize="32" VerticalAlignment="Center"
-HorizontalAlignment="Center" Foreground="White"/>
-        <Label Grid.Row="2" Grid.Column="6" Content="Manager" FontSize="22"/>
-        <Label Grid.Row="2" Grid.Column="7" Grid.ColumnSpan="3" Content="Use the whfwfh whuf in Manager" Foreground="White"/>
-        <Label Grid.Row="3" Grid.Column="6" Grid.ColumnSpan="2" Grid.RowSpan="2"  Content="Report"  FontSize="32" Foreground="White"/>
+        <Border Grid.Row="11" Grid.Column="3" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Center"
+                HorizontalAlignment="Center" BorderBrush="White" BorderThickness="2">
+            <TextBlock Padding="3"
+                Text="Clear" FontSize="32" Foreground="White"/>
+        </Border>
+        
+        <Label Grid.Row="2" Grid.Column="6" Grid.ColumnSpan="2" Content="Manage" FontSize="22"/>
+        <Label Grid.Row="2" Grid.Column="7" Grid.ColumnSpan="3" Content="|Use the whfwfh whuf in Manager" Foreground="White"/>
+        <Border Grid.Row="3" Grid.Column="6" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Center"
+                HorizontalAlignment="Left" BorderBrush="White" BorderThickness="2"> 
+            <Label   Content="Report"  FontSize="32" Foreground="White"/>
+        </Border>
+        <Border Grid.Row="3" Grid.Column="8" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Center"
+                HorizontalAlignment="Left" BorderBrush="White" BorderThickness="2">
+            <Label Content="Dashboard" FontSize="32" Foreground="White"/>
+        </Border>
+        <Border Grid.Row="6" Grid.Column="6" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Center"
+                HorizontalAlignment="Center" BorderBrush="White" BorderThickness="2" Margin="0 0 10 0 ">
+            <Label Content="Gold Value" FontSize="30" Foreground="White" />
+        </Border>
+        <Border Grid.Row="6" Grid.Column="8" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Center"
+                HorizontalAlignment="Center" BorderBrush="White" BorderThickness="2">
+            <Label Content="Silver Value" FontSize="30" Foreground="White"/>
+        </Border>
+        <Border Grid.Row="9" Grid.Column="6" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Center"
+                HorizontalAlignment="Center" BorderBrush="White" BorderThickness="2">
+            <Label Content="Export Excel" FontSize="28" Foreground="White"/>
+        </Border>
+        <Border Grid.Row="9" Grid.Column="8" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Center"
+                HorizontalAlignment="Center" BorderBrush="White" BorderThickness="2">
+            <Label Content="About" FontSize="29" Foreground="White"/>
+
+        </Border>
     </Grid>
-    
+
 </Window>
